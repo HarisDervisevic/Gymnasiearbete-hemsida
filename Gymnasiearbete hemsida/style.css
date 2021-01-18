@@ -1,0 +1,99 @@
+.header{
+    background-color: yellow;
+}
+
+.parallax {
+    background-image: url("How-To-Meet-Women-At-The-Gym.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .text1{
+    color:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button{
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    width: 130px;
+    height: 40px;
+  }
+
+  .button:hover {
+    background-color: orange;
+    color: white;
+  }
+
+
+  .row{
+    justify-content: center;
+  }
+ 
+  .col{
+    background-color: #343a40;
+    height: 60vh;
+    width: 200px;
+    border-radius: 0.6em;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 80px;
+  }
+
+  .content{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5em;
+  border-radius: 0.3em;
+  margin-left: 17px;
+  font-family: Open Sans;
+  }
+
+  .content:hover .image {
+    opacity: 0.3;
+  }
+
+  .content:hover .button2 {
+    opacity: 1;
+  }
+  
+
+  .image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+  }
+
+  .button2{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  }
+
+
+  .separtion{
+    background-color: white;
+    height: 50vh;
+    width: 30px;
+  }
