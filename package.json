@@ -1,0 +1,29 @@
+{
+  "name": "Gymnasiearbete-hemsida",
+  "version": "1.0.0",
+  "description": "Hemsidan till gymnasiearbetet",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13",
+    "node": "^15.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarisDervisevic/Gymnasiearbete-hemsida.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarisDervisevic/Gymnasiearbete-hemsida/issues"
+  },
+  "homepage": "https://github.com/HarisDervisevic/Gymnasiearbete-hemsida#readme"
+}
