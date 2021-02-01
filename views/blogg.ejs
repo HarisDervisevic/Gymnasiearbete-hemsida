@@ -31,7 +31,7 @@
             <li><a href="trännig_kost.html">Trännig och kost</a></li>
             <li><a href="medlemskap.html">Medlemskap</a></li>
             <li><a href="kontakta_oss.html">Kontakta oss</a></li>
-            <li><a href="viewsblogg.ejs">Blogg</a></li>
+            <li><a href="blogg">Blogg</a></li>
           </ul>
         </div>
       </nav>
@@ -40,36 +40,44 @@
 </div>
 
 <h1 class="blogg_header"> Blogg</h1>
-<h1 class="blogg_under_text">SATS egna blogg där våra medlemmar kan kommunicera med varandra.</h1>
+<h1 class="blogg_under_text">SATS egna blogg där våra medlemmar kan kommunicera med varandra och med oss.</h1>
 
 <div class="media border p-3">
-    <img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+   <img src="mancity.jpg"  class="mr-3 mt-3 rounded-circle" alt="" height="20px" width="20px">
     <div class="media-body">
-      <h4>John frisson <small><i>Posted on February 19, 2016</i></small></h4>
-      <p>Lorem ipsum...</p>
+      <h4>John frisson <small><i>Lagts up 10 Februari, 2020</i></small></h4>
+      <p>Vet någon hur man använder de olika maskinerna för bentrännig i gymmet?</p>
       <div class="media p-3">
-        <img src="img_avatar2.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+        <img src="avatar.png"Jane Doe class="mr-3 mt-3 rounded-circle" style="width:45px;">
         <div class="media-body">
-          <h4>Jane Doe <small><i>Posted on February 20 2016</i></small></h4>
-          <p>Lorem ipsum...</p>
+          <h4>Patrick rosgård <small>(Admin) <i>Lagts up February 10 2020</i></small></h4>
+          <p>På de flesta maskinerna brukar det finnas bilder och text som förklarar hur du använder maskinen och vilka risker
+             det finns, om det av någon anledning inte finns så kan du kolla med personalen på gymmet dem har säkert extra:)
+          </p>
         </div>
       </div> 
-    </div>
-  </div>
+    
+  
 
-  <h1>Wanna subsribe to our newsletter? leave your email and a message below</h1>
+  <ol>
+    <% for(let i = 0; i < message.length; i++) { %> D
+        <li> 
+          <div class="media p-3"></div>
+          <img src="real_avatar.jpg" class="mr-3 mt-3 rounded-circle" height="20px" width="20px">
+          <%- message[i].email %> 
+        </li>
+      </div>
+  
+    <% } %>
+    </ol>
+
   <form action="/message" method="post">
-  <input type="email" name="email" placeholder="example@email.com">
-  <input type="password" name="password" placeholder="password">
-  <button type="submit">sumbit</button>
+  <input type="email" name="email" placeholder="">
+  <button type="submit">Lägg upp</button>
   </form>
-<ol>
-  <% for(let i = 0; i < message.length; i++) { %> D
-      <li> 
-         <p>message[i]</p> 
-      </li>
+</div>
+</div>
 
-  <% } %>
 
 <footer class="page-footer font-small mdb-color pt-4">
 
