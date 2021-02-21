@@ -40,7 +40,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7;
+    color: white;
   }
 
 
@@ -92,43 +92,21 @@
     background-color: #343a40;
     height: 60vh;
     width: 200px;
-    border-radius: 0.6em;
+    border-radius: 0.em;
     margin-top: 50px;
-    color: white;
     margin-bottom: 80px;
+    margin-right: 10px;
+    border-radius: 0.5em;
   }
-
- .modification1{
-  background-color: orange;
-  border-radius: 0.6em;
-  margin-top: 25px;
-  color: black;
-  margin-bottom: 80px;
- }
-
- .modification2{
-  background-color: black;
-  border-radius: 0.6em;
-  margin-top: 25px;
-  color: black;
-  margin-bottom: 80px;
- }
-
- .modification3{
-  background-color: beige;
-  border-radius: 0.6em;
-  margin-top: 25px;
-  color: black;
-  margin-bottom: 80px;
- }
 
   .content{
   text-align: center;
   margin-top: 10px;
   font-size: 1.5em;
-  border-radius: 0.3em;
+  border-radius: 0.5em;
   margin-left: 17px;
   font-family: Open Sans;
+
   }
 
   .content:hover .image {
@@ -138,8 +116,6 @@
   .content:hover .button2 {
     opacity: 1;
   }
-  
-
   .image{
     opacity: 1;
     display: block;
@@ -148,6 +124,10 @@
     transition: .5s ease;
     backface-visibility: hidden;
 
+  }
+
+  .media p-4{
+     margin-right: -100px ;
   }
 
   .button2{
@@ -174,12 +154,403 @@
   }
 
   .blogg_header{
+    border-top: 2px solid black;
     font-size: 5em;
     font-family: Open Sans;
+    text-align: center;
+    color: white;
     
   }
 
   .blogg_under_text{
     font-size: 1.8em;
     font-family: Open Sans;
+    text-align: center;
+    color: white;
   }
+
+  .blog_post{
+     margin-left: 300px;
+
+  }
+
+  .blogg_button{
+    margin-left: 80px;
+    border-radius: 0.3em;
+  }
+
+  .size{
+    font-size: 1.2em;
+  }
+
+  .image_blogg{
+    width: 100%;
+    background-color: black;
+    height: 800px;
+    margin-top: -200px;
+    background-image: url("custom.PNG");
+    background-size:cover;
+    margin-bottom: 50px;
+  }
+
+  .blogg_side{
+    width: 500px;
+    float: right;
+    background-color: black;
+    height: 1025px;
+    background-image: url("vibes.jpg");
+    background-size:cover;
+    margin-bottom: 50px;}
+
+  .content1{
+    width: 33.33%;
+    height: 600px;
+    background-color: black;
+    margin-top: 1px;
+    float: left;
+    background-size:cover;
+    position: relative;
+  }
+  .image2{
+    display: block;
+    width: 100%;
+  }
+
+  .image2_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .image2_text--blur{
+    backdrop-filter: blur (5px);
+  }
+
+  .text1{
+    margin-top: 50px;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .image2_text:hover{
+    opacity: 1;
+  }
+
+  .space{
+    width: 100%;
+    height: 160px;
+    background-color: black;
+  }
+
+  .space1{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+  }
+
+  .space2{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+  }
+
+  .image_title{
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .content2{
+    width: 33.33%;
+    height: 600px;
+    background-color: black;
+    margin-top: 1px;
+    float: left;
+    background-size:cover;
+    position: relative;
+  }
+
+  .content3{
+    width: 33.33%;
+    height: 600px;
+    background-color: black;
+    margin-top: 1px;
+    float: left;
+    background-size:cover;
+    position: relative;
+  }
+
+  .allcontents::after{
+    content: "";
+    display: table;
+    clear: both;
+ 
+  }
+
+  .space3{
+    height: 50px;
+  }
+
+   .extend{
+     height: 150px;
+   }
+
+  @import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+.body{
+	font-family: 'Gothic A1', sans-serif;
+	font-size:16px;
+	}
+	p{
+	color:#6c6c6f;
+	font-size:1em;
+	}
+	h6{color:#323233;text-transform:uppercase;}
+.navbar-brand  span{
+	color: #fed136;
+	font-size:25px;font-weight:700;letter-spacing:0.1em;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+.navbar-brand {
+	color: #fff;
+	font-size:25px;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+	font-weight:700;
+	letter-spacing:0.1em;
+}
+
+.navbar-nav .nav-item .nav-link{
+	padding: 1.1em 1em!important;
+	font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+   font-family: 'Gothic A1', sans-serif;
+}
+.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	border-top:3px solid #fed136;
+}
+.dropdown-item:hover{background-color:#fed136;color:#fff;}
+nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+	}
+	
+ .shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+}
+.banner{
+	background-image:url('sven-mieke-jO6vBWX9h9Y-unsplash.jpg');
+}
+.banner2{
+  background-image:url('recept2.jpg');
+  border-bottom: 2px solid black;
+}
+
+.banner3{
+	background-image:url('edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg');
+  background-size: covers;
+  border-bottom: 2px solid black;
+}
+.membershiph1{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+.banner, .banner2, .banner3{
+	text-align: center;
+    color: #fff;
+   
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.banner-text{
+	padding:200px 0 150px 0;
+}
+.banner-heading{
+	font-family: 'Lobster', cursive;
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+	color:#fff;
+}
+.banner-sub-heading{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+	color:#fff;
+}
+
+.btn-banner{
+	padding:5px 20px;
+	border-radius:10px;
+	font-weight:700;
+	line-height:1.5;
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+}
+.text-intro{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	padding-top:30px;
+}
+
+
+/* mobile view */
+@media (max-width:500px)
+{
+	.navbar-nav{
+		background-color:#000;
+		border-top:3px solid #fed136;
+		color:#fff;
+		z-index:1;
+		margin-top:5px;
+		}
+	.navbar-nav .nav-item .nav-link{
+	padding: 0.7em 1em!important;
+	font-size: 100%;
+    font-weight: 500;
+    }
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+}
+
+}
+
+@media (max-width:768px){
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+	.banner-sub-heading{
+	font-size: 23px;
+    font-weight: 200;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+}
+
+.bg-grey {
+  background: #292929;
+}
+.logo-footer {
+  margin-bottom: 40px;
+}
+footer {
+      color: grey;
+}
+footer p, a {
+font-size: 12px;
+font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+font-family: 'Playfair Display', serif;
+margin-bottom: 40px;
+position: relative;
+}
+footer h6:after {
+position: absolute;
+content: "";
+background: grey;
+width: 12%;
+height: 1px;
+left: 0;
+bottom: -20px;
+}
+.btn-footer {
+           color: grey;
+        
+          text-decoration: none;
+          border: 1px solid;
+          border-radius: 43px;
+          font-size: 13px;
+          padding: 7px 30px;
+          line-height: 47px;
+}
+.btn-footer:hover {
+          
+          text-decoration: none;
+         
+}
+.form-footer input[type="text"] {
+  border: none;
+border-radius: 16px 0 0 16px;
+outline: none;
+padding-left: 10px;
+
+}
+::placeholder {
+font-size: 10px;
+padding-left: 10px;
+font-style: italic;
+}
+.form-footer input[type="button"] {
+border: none;
+background:#232323;
+  margin-left: -5px;
+color: #fff;
+outline: none;
+border-radius: 0 16px 16px 0;
+padding: 2px 12px;
+}
+.social .fa {
+color: grey;
+font-size: 22px;
+padding: 10px 15px;
+background: #3c3c3c;
+}
+footer ul li {
+list-style: none;
+display: block;
+}
+footer ul  {
+padding-left: 0;
+}
+footer ul  li a{
+text-decoration: none;
+color: grey;
+text-decoration:none;
+}
+a:hover {
+text-decoration: none;
+color: #f5f5f5 !important;
+
+}
+.logo-part {
+border-right: 1px solid grey;
+height: 100%;
+}
+ 

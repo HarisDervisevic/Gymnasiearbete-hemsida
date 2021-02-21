@@ -18,45 +18,78 @@
 </head>
 <body>
 
-  <div class="header">
- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
- 
-    <a class="navbar-brand" href="#"><img src="header-picture.jpg" alt="" width="50px" height="50px"></a>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+    <div class="container">
+
+    <a class="navbar-brand" href="#"><span>SATS</span> GYM</a>
   
-    <ul class="navbar-nav">
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Startsida</a></li>
-            <li><a href="trännig_kost.html">Trännig och kost</a></li>
-            <li><a href="medlemskap.html">Medlemskap</a></li>
-            <li><a href="kontakta_oss.html">Kontakta oss</a></li>
-            <li><a href="blogg">Blogg</a></li>
-          </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Startsida</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakta_oss.html">Kontakta oss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="medlemskap.html">Medlemskap</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="blogg">Blogg</a>
+        </li> 
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="trännig_kost.html" id="navbardrop" data-toggle="dropdown">
+          Mat och hälsa
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="trännig_kost.html">Recept</a>
+          <a class="dropdown-item" href="trännig_kost.html">Kost och näring</a>
+          <a class="dropdown-item" href="trännig_kost.html">Mat och hälsa</a>
         </div>
-      </nav>
-    </ul>
-  </nav>
-</div>
-
-<div class="parallax">
-  <div class="text1">
-    <h1>Sätt ihop ett medlemskap som passar dig.</h1>
-
-    <div class="button" >
-      <a href="medlemskap.html" style="color: white;">Bli medlem</a>
+      </li>
+      </ul>
     </div>
-
+    </div>
+  </nav>
+  
+  <div class="banner">
+    <div class="container">
+    <div class="banner-text">
+    <div class="banner-heading">
+    Sveriges BÄSTA Tränning
+    </div>
+    <div class="banner-sub-heading">
+      Med eller utan bindningstid
+      - du bestämmer!
+    </div>
+    <button type="button" class="btn btn-warning text-dark btn-banner">Bli medlem</button>
+    </div>
+    </div>
   </div>
-</div>
+  <section id="about">
+  <div class="container">
+    <div class="text-intro">
+    <h2>Om oss</h2>
+      <p>SATS Group är Nordens ledande träningskedja, med visionen att påverka hälsa och livskvaliteten hos våra medlemmar och samhället i stort.
+        Alla är välkomna till SATS. Vi motiverar våra medlemmar genom att utgå från deras egen nivå och bidra med positiva utmaningar, både stora 
+        och små. SATS erbjuder branschens mest kompetenta och inspirerande personal i en välkomnande miljö på våra center. Vi har ett brett produktutbud inom träning och tillsammans med 
+        digitala utvecklingar erbjuder vi det senaste i branschen. Vi är dedikerade att hjälpa våra medlemmar att vara aktiva, ha ett hälsosamt och lyckligare liv.</p>
+    </div>
+  </div>
+  </section>
 
 <div class="row"> 
   <div class="col">
     <div class="content">
-      <h1>Kost och näring</h1>
-      <p>Med rätt kost och näring kommer du långt i strävan efter en hälsosam livsstil. 
+      <h2 style="color: white;">Kost och näring</h2>
+      <p style="color: white;">Med rätt kost och näring kommer du långt i strävan efter en hälsosam livsstil. 
         Här finns inspirationen och tipsen du behöver.</p>
-      <img src="kost-näring.jpg" alt=""  class="image" width="350px" height="200vh">
+      <img src="kost-näring.jpg" alt=""  class="image" width="350px" height="250vh">
       <div class="button2">
         <a href="trännig_kost.html" style="color: white;">Mer information här!</a>
       </div>
@@ -68,8 +101,8 @@
 
   <div class="col">
     <div class="content">
-      <h2>Mat och hälsa</h2>
-      <p>Tränning är inte det enda som måste ändras för ett hälsosamare liv utan även kosten. Här finns tips på hur du kan ändra din kost för ett hälsosammare liv</p>
+      <h2 style="color: white;">Mat och hälsa</h2>
+      <p style="color: white;">Tränning är inte det enda som måste ändras för ett hälsosamare liv utan även kosten. Här finns tips på hur kosten ska ändras för ett hälsosammare liv</p>
       <img src="mat-hälsa.jpg" alt=""  class="image" width="300px" height="200vh">
       <div class="button2">
         <a href="trännig_kost.html" style="color: white;">Mer information här!</a>
@@ -82,8 +115,8 @@
 
   <div class="col">
     <div class="content">
-      <h2>Recept</h2>
-      <p>Vi har valt ut de de bästa rätterna för dig som tränar. Allt från energi rika till näringsrika rätter, läs mer på länken nedan</p>
+      <h2 style="color: white;">Recept</h2>
+      <p style="color: white;">Vi har valt ut de de bästa rätterna för dig som tränar. Allt från energi rika till näringsrika rätter, läs mer på länken nedan</p>
       <img src="recept.jpg" alt=""  class="image" width="350px" height="200vh">
       <div class="button2">
         <a href="trännig_kost.html" style="color: white;" >Mer information här!</a>

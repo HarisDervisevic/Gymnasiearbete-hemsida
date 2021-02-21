@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="js/bootstrap.js">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+  <style>
+   body {
+        font-family: 'Signika', sans-serif;
+     }
+  </style>
 
     <title>SATS träningscenter – Gym, fitness & träning - SATS</title>
 </head>
@@ -28,10 +33,10 @@
         <div class="container-fluid">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Startsida</a></li>
-            <li><a href="trännig_kost.html">Trännig och kost</a></li>
-            <li><a href="medlemskap.html">Medlemskap</a></li>
             <li><a href="kontakta_oss.html">Kontakta oss</a></li>
+            <li><a href="medlemskap.html">Medlemskap</a></li>
             <li><a href="blogg">Blogg</a></li>
+            <li><a href="trännig_kost.html">Trännig och kost</a></li>
           </ul>
         </div>
       </nav>
@@ -39,19 +44,26 @@
   </nav>
 </div>
 
-<h1 class="blogg_header"> Blogg</h1>
-<h1 class="blogg_under_text">SATS egna blogg där våra medlemmar kan kommunicera med varandra och med oss.</h1>
+<h2 class="blogg_header"> Blogg</h2>
+<h2 class="blogg_under_text">SATS egna blogg där våra medlemmar kan kommunicera med varandra och med oss.</h2>
+<div class="image_blogg">
+</div>
 
+<div class="blogg_side">
+
+</div>
+<div class="image_blogg2">
+</div>
 <div class="media border p-3">
    <img src="mancity.jpg"  class="mr-3 mt-3 rounded-circle" alt="" height="20px" width="20px">
     <div class="media-body">
       <h4>John frisson <small><i>Lagts up 10 Februari, 2020</i></small></h4>
-      <p>Vet någon hur man använder de olika maskinerna för bentrännig i gymmet?</p>
+      <p class="size">Vet någon hur man använder de olika maskinerna för bentrännig i gymmet?</p>
       <div class="media p-3">
         <img src="avatar.png"Jane Doe class="mr-3 mt-3 rounded-circle" style="width:45px;">
         <div class="media-body">
           <h4>Patrick rosgård <small>(Admin) <i>Lagts up February 10 2020</i></small></h4>
-          <p>På de flesta maskinerna brukar det finnas bilder och text som förklarar hur du använder maskinen och vilka risker
+          <p class="size">På de flesta maskinerna brukar det finnas bilder och text som förklarar hur du använder maskinen och vilka risker
              det finns, om det av någon anledning inte finns så kan du kolla med personalen på gymmet dem har säkert extra:)
           </p>
         </div>
@@ -61,143 +73,246 @@
 
   <ol>
     <% for(let i = 0; i < message.length; i++) { %> 
-        <li> 
-          <div class="media p-3"></div>
+        
+          <div class="blog_post"></div>
           <img src="real_avatar.jpg" class="mr-3 mt-3 rounded-circle" height="20px" width="20px">
-          <%- message[i].email %> 
-        </li>
+          <div class="media-body">
+          <h4>I_only_bench_press <small><i>Lagts up February 11 2020</i></small></h4>
+          <%- message[i].text %> 
+        </div> 
       </div>
   
     <% } %>
     </ol>
 
+    <div class="blogg_button">
   <form action="/blogg" method="post">
-  <input type="email" name="email" placeholder="">
-  <button type="submit">Lägg upp</button>
+  <input type="text" name="message" placeholder="Skriv inlägg">
+  <button class="submit_button" type="submit">Lägg upp</button>
   </form>
 </div>
 </div>
+</div>
+
+<div class="media border p-3">
+  <img src="mancity.jpg"  class="mr-3 mt-3 rounded-circle" alt="" height="20px" width="20px">
+   <div class="media-body">
+     <h4>Mykola Pallas <small><i>Lagts up 20 Februari, 2020</i></small></h4>
+     <p class="size">Vad kostar det att gymma på SATS?</p>
+     <div class="media p-3">
+       <img src="avatar.png"Jane Doe class="mr-3 mt-3 rounded-circle" style="width:45px;">
+       <div class="media-body">
+         <h4>Patrick rosgård <small>(Admin) <i>Lagts up February 20 2020</i></small></h4>
+         <p class="size">Beror på vart du ska träna osv, mendu kan kolla på våran medlemskaps sida för mer information.
+         </p>
+       </div>
+     </div> 
+   
+ 
+
+ <ol>
+   <% for(let i = 0; i < message.length; i++) { %> 
+       
+         <div class="blog_post"></div>
+         <img src="real_avatar.jpg" class="mr-3 mt-3 rounded-circle" height="20px" width="20px">
+         <div class="media-body">
+         <h4>Adrian Cai <small><i>Lagts up February 21 2020</i></small></h4>
+         <%- message[i].text %> 
+       </div> 
+     </div>
+ 
+   <% } %>
+   </ol>
+
+   <div class="blogg_button">
+ <form action="/blogg" method="post">
+ <input type="text" name="message" placeholder="Skriv inlägg">
+ <button class="submit_button" type="submit">Lägg upp</button>
+ </form>
+</div>
+</div>
+</div>
 
 
-<footer class="page-footer font-small mdb-color pt-4">
+<div class="media border p-3">
+  <img src="mancity.jpg"  class="mr-3 mt-3 rounded-circle" alt="" height="20px" width="20px">
+   <div class="media-body">
+     <h4>Markus Hildegard <small><i>Lagts up 31 augusti, 2020</i></small></h4>
+     <p class="size">Hur hittar man närmaste SATS?</p>
+     <div class="media p-3">
+       <img src="avatar.png"Jane Doe class="mr-3 mt-3 rounded-circle" style="width:45px;">
+       <div class="media-body">
+         <h4>Patrick rosgård <small>(Admin) <i>Lagts up 31 augusti 2020</i></small></h4>
+         <p class="size">På de flesta maskinerna brukar det finnas bilder och text som förklarar hur du använder maskinen och vilka risker
+            det finns, om det av någon anledning inte finns så kan du kolla med personalen på gymmet dem har säkert extra:)
+         </p>
+       </div>
+     </div> 
+   
+ 
+
+ <ol>
+   <% for(let i = 0; i < message.length; i++) { %> 
+       
+         <div class="blog_post"></div>
+         <img src="real_avatar.jpg" class="mr-3 mt-3 rounded-circle" height="20px" width="20px">
+         <div class="media-body">
+         <h4>I_only_bench_press <small><i>Lagts up February 11 2020</i></small></h4>
+         <%- message[i].text %> 
+       </div> 
+     </div>
+ 
+   <% } %>
+   </ol>
+
+   <div class="blogg_button">
+ <form action="/blogg" method="post">
+ <input type="text" name="message" placeholder="Skriv inlägg">
+ <button class="submit_button" type="submit">Lägg upp</button>
+ </form>
+</div>
+</div>
+</div>
+
+<div class="media border p-3">
+  <img src="mancity.jpg"  class="mr-3 mt-3 rounded-circle" alt="" height="20px" width="20px">
+   <div class="media-body">
+     <h4>Bjoern Rut<small><i>Lagts up 10 september, 2020</i></small></h4>
+     <p class="size">Vet någon hur man använder de olika maskinerna för bentrännig i gymmet?</p>
+     <div class="media p-3">
+       <img src="avatar.png"Jane Doe class="mr-3 mt-3 rounded-circle" style="width:45px;">
+       <div class="media-body">
+         <h4>Patrick rosgård <small>(Admin) <i>Lagts up september 10 2020</i></small></h4>
+         <p class="size">På de flesta maskinerna brukar det finnas bilder och text som förklarar hur du använder maskinen och vilka risker
+            det finns, om det av någon anledning inte finns så kan du kolla med personalen på gymmet dem har säkert extra:)
+         </p>
+       </div>
+     </div> 
+   
+ 
+
+ <ol>
+   <% for(let i = 0; i < message.length; i++) { %> 
+       
+         <div class="blog_post"></div>
+         <img src="real_avatar.jpg" class="mr-3 mt-3 rounded-circle" height="20px" width="20px">
+         <div class="media-body">
+         <h4>I_like_working_out <small><i>Lagts up September 10 2020</i></small></h4>
+         <%- message[i].text %> 
+       </div> 
+     </div>
+ 
+   <% } %>
+   </ol>
+
+   <div class="blogg_button">
+ <form action="/blogg" method="post">
+ <input type="text" name="message" placeholder="Skriv inlägg">
+ <button class="submit_button" type="submit">Lägg upp</button>
+ </form>
+</div>
+</div>
+</div>
 
 
-    <div class="container text-center text-md-left">
-  
-  
-      <div class="row text-center text-md-left mt-3 pb-3">
-  
-    
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">SATS</h6>
-          <p>Vi strävar efter att skapa en trygg och ren miljö för våra medlemmar och har därför valt att tillåta max 20 personer
-            vistas i samma lokal, läs mer på folkmyndighetens sida om mer infromation angående restriktionerna.
-          </p>
+<div class="media border p-3">
+  <img src="mancity.jpg"  class="mr-3 mt-3 rounded-circle" alt="" height="20px" width="20px">
+   <div class="media-body">
+     <h4>Jakob Jonatan <small><i>Lagts up 10 Februari, 2020</i></small></h4>
+     <p class="size">Vet någon hur man använder de olika maskinerna för bentrännig i gymmet?</p>
+     <div class="media p-3">
+       <img src="avatar.png"Jane Doe class="mr-3 mt-3 rounded-circle" style="width:45px;">
+       <div class="media-body">
+         <h4>Patrick rosgård <small>(Admin) <i>Lagts up February 10 2020</i></small></h4>
+         <p class="size">På de flesta maskinerna brukar det finnas bilder och text som förklarar hur du använder maskinen och vilka risker
+            det finns, om det av någon anledning inte finns så kan du kolla med personalen på gymmet dem har säkert extra:)
+         </p>
+       </div>
+     </div> 
+   
+ 
+
+ <ol>
+   <% for(let i = 0; i < message.length; i++) { %> 
+       
+         <div class="blog_post"></div>
+         <img src="real_avatar.jpg" class="mr-3 mt-3 rounded-circle" height="20px" width="20px">
+         <div class="media-body">
+         <h4>I_only_bench_press <small><i>Lagts up February 11 2020</i></small></h4>
+         <%- message[i].text %> 
+       </div> 
+     </div>
+ 
+   <% } %>
+   </ol>
+
+   <div class="blogg_button">
+ <form action="/blogg" method="post">
+ <input type="text" name="message" placeholder="Skriv inlägg">
+ <button class="submit_button" type="submit">Lägg upp</button>
+ </form>
+</div>
+</div>
+</div>
+
+<div class="space3">
+
+</div>
+
+
+<footer class="container-fluid bg-grey py-5">
+  <div class="container">
+     <div class="row">
+        <div class="col-md-6">
+           <div class="row">
+              <div class="col-md-6 ">
+                 <div class="logo-part">
+                    <img src="" class="w-50 logo-footer" >
+                    <p>Stockholms gatan, Sverige</p>
+                    <p>Vi strävar efter att skapa en trygg och ren miljö för våra medlemmar och har därför valt att tillåta max 20 personer
+                      vistas i samma lokal, läs mer på folkmyndighetens sida om mer infromation angående restriktionerna.</p>
+                 </div>
+              </div>
+              <div class="col-md-6 px-4">
+                 <h6> Om SATS</h6>
+                 <p>SATS Group är Nordens ledande träningskedja, med visionen att påverka hälsa och livskvaliteten hos våra medlemmar och samhället i stort.</p>
+                 <a href="kontakta_oss.html" class="btn-footer"> Kontakta oss</a>
+              </div>
+           </div>
         </div>
-  
-  
-        <hr class="w-100 clearfix d-md-none">
-  
-  
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Användbara länkar</h6>
-          <p>
-            <a href="kontakta_oss.html">Kontakta oss här!</a>
-          </p>
-          <p>
-            <a href="medlemskap.html">Mer om medlemskap</a>
-          </p>
-          <p>
-            <a href="https://www.youtube.com/channel/UCqhskBVX4e4henE1Wcgh5cg"> Vår youtube kannal</a>
-          </p>
+        <div class="col-md-6">
+           <div class="row">
+              <div class="col-md-6 px-4">
+                 <h6> Help us</h6>
+                 <div class="row ">
+                    <div class="col-md-6">
+                       <ul>
+                          <li> <a href="#"> Startsida</a> </li>
+                          <li> <a href="#"> kontakta oss</a> </li>
+                          <li> <a href="#"> Medlemskap</a> </li>
+                          <li> <a href="#"> Blogg</a> </li>
+                          <li> <a href="#"> Mat och hälsa</a> </li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6 ">
+                 <h6> Newsletter</h6>
+                 <div class="social">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                 </div>
+                 <form class="form-footer my-3">
+                    <input type="text"  placeholder="Sök här...." name="search">
+                    <input type="button" value="Go" >
+                 </form>
+                 <p></p>
+              </div>
+           </div>
         </div>
-  
-    
-  
-        <hr class="w-100 clearfix d-md-none">
-  
-      
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Sociala medier</h6>
-          <p>
-            <a href="https://www.instagram.com/satssverige/?hl=sv">Instagram</a>
-          </p>
-          <p>
-            <a href="https://twitter.com/satssverige">Twitter</a>
-          </p>
-          <p>
-            <a href="https://sv-se.facebook.com/satssverige">Facebook</a>
-          </p>
-        </div>
-  
-        <hr class="w-100 clearfix d-md-none">
-  
-     
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">kontakta oss</h6>
-          <p>
-            <i class="fas fa-home mr-3"></i> Stockholms gatan, Sverige</p>
-          <p>
-            <i class="fas fa-envelope mr-3"></i> satssverige@gmail.com</p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> Ring oss i Sverige +79 567 77 89</p>
-          <p>
-            <i class="fas fa-print mr-3"></i> Ring oss utomlands +59 867 47 36</p>
-        </div>
-        
-  
-      </div>
-     
-  
-      <hr>
-  
-      
-      <div class="row d-flex align-items-center">
-  
-     
-        <div class="col-md-7 col-lg-8">
-  
-          <p class="text-center text-md-left">© 2020 Copyright:
-            <a href="index.html">
-              <strong> satssverige.com</strong>
-            </a>
-          </p>
-  
-        </div>
-  
-        <div class="col-md-5 col-lg-4 ml-lg-0">
-  
-          <div class="text-center text-md-right">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-google-plus-g"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  
-  </footer>
-  
+     </div>
+  </div>
+  </div>
       
       
   </body>
